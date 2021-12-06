@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace YeniPersonelUygulaması
 {
-    public class BasePlusComissionEmplooye:ComissionEmployee
+    public class BasePlusComissionEmplooye : ComissionEmployee
     {
-        
+
         private double _baseSalary;
 
         public double baseSalary
@@ -18,11 +18,11 @@ namespace YeniPersonelUygulaması
         }
 
         public BasePlusComissionEmplooye()
-        {    
+        {
         }
         public override double earnings()
         {
-            return (comissionRate*grossSales)+baseSalary;
+            return (comissionRate * grossSales) + baseSalary;
         }
 
         public override void ToString()
@@ -30,17 +30,17 @@ namespace YeniPersonelUygulaması
             try
             {
                 Console.WriteLine("Please type employee Firstname");
-                firstName = Console.ReadLine();
+                this.firstName = Console.ReadLine();
                 Console.WriteLine("Please type employee Lastname");
-                lastName = Console.ReadLine();
+                this.lastName = Console.ReadLine();
                 Console.WriteLine("Please type employee SSN");
-                SSN = Console.ReadLine();
+                this.SSN = Console.ReadLine();
                 Console.WriteLine("Please enter employee comission rate");
-                comissionRate = Convert.ToDouble(Console.ReadLine());
+                this.comissionRate = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Please enter employee gross sales");
-                grossSales = Convert.ToDouble(Console.ReadLine());
+                this.grossSales = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Please enter employee base salary");
-                baseSalary = Convert.ToDouble(Console.ReadLine());
+                this.baseSalary = Convert.ToDouble(Console.ReadLine());
 
             }
             catch (Exception ex)
@@ -52,5 +52,5 @@ namespace YeniPersonelUygulaması
         }
 
     }
-    
+
 }

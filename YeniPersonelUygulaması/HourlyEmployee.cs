@@ -46,7 +46,7 @@ namespace YeniPersonelUygulaması
                 {
                     Console.WriteLine("Your hours that you worked must be greater than zero");
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -58,16 +58,24 @@ namespace YeniPersonelUygulaması
 
         public override void ToString()
         {
-            Console.WriteLine("Please type employee Firstname");
-            firstName = Console.ReadLine();
-            Console.WriteLine("Please type employee Lastname");
-            lastName = Console.ReadLine();
-            Console.WriteLine("Please type employee SSN");
-            SSN = Console.ReadLine();
-            Console.WriteLine("Please type employee hourly wage");
-            wage = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Please type employee  hours worked");
-            hours = Convert.ToDouble(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Please type employee Firstname");
+                this.firstName = Console.ReadLine();
+                Console.WriteLine("Please type employee Lastname");
+                this.lastName = Console.ReadLine();
+                Console.WriteLine("Please type employee SSN");
+                this.SSN = Console.ReadLine();
+                Console.WriteLine("Please type employee hourly wage");
+                this.wage = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Please type employee  hours worked");
+                this.hours = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

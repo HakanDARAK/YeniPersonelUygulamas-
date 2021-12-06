@@ -39,15 +39,15 @@ namespace YeniPersonelUygulaması
             try
             {
                 Console.WriteLine("Please type employee Firstname");
-                firstName = Console.ReadLine();
+                this.firstName = Console.ReadLine();
                 Console.WriteLine("Please type employee Lastname");
-                lastName = Console.ReadLine();
+                this.lastName = Console.ReadLine();
                 Console.WriteLine("Please type employee SSN");
-                SSN = Console.ReadLine();
+                this.SSN = Console.ReadLine();
                 Console.WriteLine("Please enter employee comission rate");
-                comissionRate = Convert.ToDouble(Console.ReadLine());
+                this.comissionRate = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Please enter employee gross sales");
-                grossSales = Convert.ToDouble(Console.ReadLine());
+                this.grossSales = Convert.ToDouble(Console.ReadLine());
             }
             catch (Exception ex)
             {
